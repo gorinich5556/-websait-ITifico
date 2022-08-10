@@ -1,0 +1,247 @@
+.main__head {
+  margin-bottom: 40px;
+}
+
+.main-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lesson-page-subtitle {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #606268;
+}
+
+.main__title {
+  margin-top: -30px;
+}
+
+.main-head__p-txt {
+  font-family: bit-900;
+  font-size: 80px;
+  line-height: 96px;
+  text-align: right;
+  color: #C4CACF;
+  position: relative;
+  z-index: 0;
+}
+
+.main-head__p-txt::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #F3F4F5;
+  z-index: -1;
+  left: 20%;
+}
+
+.main__body {
+  display: flex;
+}
+
+.c-course__-content {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 23px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+}
+
+.c-course {
+  padding-top: 40px;
+}
+
+.c-course__item {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.c-course__item .c-course__item-name {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #23262D;
+  display: flex;
+  padding: 22px 15px;
+  transition-duration: 0.4s;
+}
+
+.c-course__item .c-course__item-name span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #E36F59;
+  font-family: bit-900;
+  margin-right: 9px;
+  transition-duration: 0.4s;
+}
+
+.c-course__item-name:hover {
+  color: #FFFFFF;
+  background: #E36F59;
+}
+
+.c-course__item-name:hover span {
+  color: #FFFFFF;
+}
+
+.c-course__item:not(:last-child) {
+  border-bottom: 1px solid #E2E7EB;
+}
+
+.main__l-part {
+  flex: 1 1 auto;
+  max-width: 315px;
+  padding-right: 30px;
+}
+
+.main__r-part {
+  flex: 0 1 auto;
+  max-width: 905px;
+}
+
+.c-course__sub-row {
+  display: none;
+}
+
+.c-course__sub-row_active {
+  display: block;
+}
+
+.c-course__sub-row {
+  transition-duration: 0.5s;
+  padding: 0px 30px;
+  padding-bottom: 16px;
+}
+
+.c-course__sub-row li {
+  list-style-type: decimal;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ADAEB1;
+  transition-duration: 0.4s;
+}
+
+.c-course__sub-row li p {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #23262D;
+}
+
+.c-course__sub-row li:hover {
+  font-weight: 600;
+  color: #23262D;
+}
+
+.c-course__sub-row li:hover p {
+  font-weight: 600;
+}
+
+.c-course__menu-btn {
+  display: none;
+  width: 100%;
+  background: #FFFFFF;
+  border: 2px solid #E2E7EB;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #23262D;
+  font-family: bit-700;
+  padding: 16px 10px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c-course__menu-btn-icon {
+  fill: #23262D;
+  width: 16px;
+  height: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1060px) {
+  .main-head__p-txt {
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  .main-head__p-txt::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .main__l-part {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .main__title {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 880px) {
+  .main__body {
+    flex-direction: column;
+  }
+
+  .c-course__row {
+    display: none;
+    position: relative;
+    top: -5px;
+    border: 2px solid #E2E7EB;
+    border-top: none;
+  }
+
+  .c-course__menu-btn {
+    display: flex;
+  }
+
+  .c-course__row_active {
+    display: block;
+  }
+
+  .c-course__menu-btn_active {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .c-course__item:first-child {
+    border-top: 1px solid #E2E7EB;
+  }
+}
+
+@media (max-width: 620px) {
+  .les-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .main-head__p-txt {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .main-head__p-txt::before {
+    width: 60px;
+    height: 60px;
+  }
+}
